@@ -54,5 +54,17 @@
         ]
       }
     ]
+  },
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://grant.datarelay.run/"
+  },
+  "favicon": "/favicon.svg",
+  "seo": {
+    "metatags": {
+      "canonical": "https://grant.datarelay.run"
+    },
+    "indexing": "navigable"
   }
 }
