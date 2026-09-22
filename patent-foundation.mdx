@@ -1,0 +1,81 @@
+---
+title: "Patent Foundation"
+description: "The issued patent foundation behind DataRelay Grant."
+---
+
+# Patent Foundation
+
+DataRelay Grant is being defined from the approval-management invention represented by the following granted patents.
+
+| Jurisdiction | Patent | Application | Priority date | Filing date | Grant / publication |
+| --- | --- | --- | --- | --- | --- |
+| United States | [US 12,056,667 B1](https://patents.google.com/patent/US12056667B1/en) | US 18/597,368 | 2023-03-13 | 2024-03-06 | 2024-08-06 |
+| Republic of Korea | [KR 10-2567118 B1](https://patents.google.com/patent/KR102567118B1/ko) | KR 10-2023-0058658 | 2023-03-13 | 2023-05-04 | 2023-08-16 |
+
+Inventor: **Young Oak Lee / 이영옥**
+
+<Note>
+The U.S. and Korean patents belong to the same underlying invention lineage and share the 2023-03-13 priority foundation. Their issued claim sets are not word-for-word identical, so this page treats them as the same product foundation rather than claiming that every issued claim is identical.
+</Note>
+
+## Problem addressed
+
+The patent material starts from a simple operational problem: approval is important, but conventional approval often requires conversations, document handoffs, forms, and manual interpretation of free-form responses.
+
+The invention turns that interaction into a structured approval case and connects the human decision to a deterministic next action.
+
+## Core approval flow
+
+The common technical pattern is:
+
+1. Create an approval-request case from user-provided information or an API-originated request.
+2. Send the approval request to an approver through email.
+3. Capture an explicit result such as **approve**, **pending**, or **deny**.
+4. If denied, notify the requester or originating system.
+5. If pending, send reminders at configured intervals.
+6. If approved, execute or trigger the automation associated with the selected playbook.
+
+## Email as the approval interface
+
+The issued material describes an email-centered interface in which an approver can select a response through a generated response menu. The response can be represented by a hyperlink carrying approval-server, case, response, and approver information.
+
+This makes the approval step lightweight for the approver while keeping the result structured enough for automated processing.
+
+## Templates and guided request creation
+
+The patent material also describes:
+
+- case templates;
+- lists of automation playbooks / scenarios;
+- approver lists; and
+- guidance returned to a requester when the submitted email does not contain enough information to create a valid approval case.
+
+This is important to the DataRelay Grant product direction because an approval layer should reduce ambiguity before execution rather than merely forward free-form messages.
+
+## Modular automation
+
+Automation is described as a composition of reusable modules or unit operations. A playbook / scenario is formed from a combination of those operations, allowing the approval result to control a defined automated action rather than an unspecified manual follow-up.
+
+## External-system integration
+
+The patent foundation explicitly includes a second system sending an approval request to the approval-management server through an API message and receiving the result back through an API message.
+
+That pattern is the basis for positioning DataRelay Grant as a reusable approval layer for other DataRelay products and for external systems that need a human authorization gate.
+
+## Product interpretation
+
+For DataRelay Grant, the patent concepts translate into the following design principles:
+
+- **Human decision stays explicit.** Approval is not inferred from ambiguous text.
+- **Execution is gated.** The requested automated action is separated from the authorization decision.
+- **Approval is reusable.** Other systems can request approval instead of implementing their own approval workflow.
+- **Automation is composable.** Approved work can be represented as a defined playbook built from reusable operations.
+- **Pending is a real state.** A request can remain open and drive reminders without being treated as approved or denied.
+
+## Current product status
+
+DataRelay Grant is **Coming Soon**. The patent foundation is public; the product implementation, API contract, security model, deployment architecture, and GA release scope are still being defined.
+
+<Warning>
+This page is a technical and product summary, not a legal opinion. For legal scope, rely on the official issued patent records and claims.
+</Warning>
