@@ -1,0 +1,58 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "mint",
+  "name": "DataRelay Grant",
+  "description": "Human approval and execution control for automated actions.",
+  "colors": {
+    "primary": "#7C3AED"
+  },
+  "navbar": {
+    "links": [
+      {
+        "type": "github",
+        "href": "https://github.com/datarelay-labs/datarelay-grant"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Patent Foundation",
+      "href": "/patent-foundation"
+    }
+  },
+  "search": {
+    "prompt": "Search DataRelay Grant docs..."
+  },
+  "metadata": {
+    "timestamp": true
+  },
+  "navigation": {
+    "languages": [
+      {
+        "language": "en",
+        "groups": [
+          {
+            "group": "DataRelay Grant",
+            "icon": "shield-check",
+            "pages": [
+              "index",
+              "patent-foundation"
+            ]
+          }
+        ]
+      },
+      {
+        "language": "ko",
+        "groups": [
+          {
+            "group": "DataRelay Grant",
+            "icon": "shield-check",
+            "pages": [
+              "ko/index",
+              "ko/patent-foundation"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
