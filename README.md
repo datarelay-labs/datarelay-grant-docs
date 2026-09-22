@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="favicon.svg" width="88" height="88" alt="DataRelay Grant icon">
+</p>
+
 <h1 align="center">DataRelay Grant Documentation</h1>
 
 <p align="center">
