@@ -5,7 +5,7 @@ description: "The issued patent foundation behind DataRelay Grant."
 
 # Patent Foundation
 
-DataRelay Grant is being defined from the approval-management invention represented by the following granted patents.
+DataRelay Grant is being developed from the approval-management invention covered by the following granted patents.
 
 | Jurisdiction | Patent | Application | Priority date | Filing date | Grant / publication |
 | --- | --- | --- | --- | --- | --- |
@@ -15,14 +15,14 @@ DataRelay Grant is being defined from the approval-management invention represen
 Inventor: **Young Oak Lee / 이영옥**
 
 <Note>
-The U.S. and Korean patents belong to the same underlying invention lineage and share the 2023-03-13 priority foundation. Their issued claim sets are not word-for-word identical, so this page treats them as the same product foundation rather than claiming that every issued claim is identical.
+The U.S. and Korean patents cover the same underlying invention and share the 2023-03-13 priority date. Their issued claims are not word-for-word identical, so this page treats them as the same technical foundation without implying that every claim is identical.
 </Note>
 
 ## Problem addressed
 
 The patent material starts from a simple operational problem: approval is important, but conventional approval often requires conversations, document handoffs, forms, and manual interpretation of free-form responses.
 
-The invention turns that interaction into a structured approval case and connects the human decision to a deterministic next action.
+The invention turns that interaction into a structured approval case and ties the human decision to a defined next action.
 
 ## Core approval flow
 
@@ -50,7 +50,7 @@ The patent material also describes:
 - approver lists; and
 - guidance returned to a requester when the submitted email does not contain enough information to create a valid approval case.
 
-This is important to the DataRelay Grant product direction because an approval layer should reduce ambiguity before execution rather than merely forward free-form messages.
+For DataRelay Grant, this means collecting enough structured information before execution instead of simply forwarding free-form messages.
 
 ## Modular automation
 
@@ -60,9 +60,9 @@ Automation is described as a composition of reusable modules or unit operations.
 
 The patent foundation explicitly includes a second system sending an approval request to the approval-management server through an API message and receiving the result back through an API message.
 
-That pattern is the basis for positioning DataRelay Grant as a reusable approval layer for other DataRelay products and for external systems that need a human authorization gate.
+That pattern lets DataRelay Grant serve as a reusable approval service for other DataRelay products and external systems that require human authorization before execution.
 
-## Product interpretation
+## How this maps to DataRelay Grant
 
 For DataRelay Grant, the patent concepts translate into the following design principles:
 
