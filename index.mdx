@@ -7,9 +7,9 @@ description: "Human approval before automation executes."
 
 **Human approval before automation executes.**
 
-DataRelay Grant is an upcoming approval and execution-control product from DataRelay Labs.
+DataRelay Grant is an upcoming DataRelay Labs product for human approval before automated actions run.
 
-It is being designed around the patented workflow behind **US 12,056,667 B1** and **KR 10-2567118 B1**: turn a requested action into an approval case, ask the right human for an explicit decision, and allow the corresponding automated action to proceed only when the approval result permits it.
+It builds on the patented workflow behind **US 12,056,667 B1** and **KR 10-2567118 B1**: create an approval case for a requested action, ask the designated approver for a clear decision, and continue with the automated action only when that decision allows it.
 
 <Warning>
 **Coming Soon.** DataRelay Grant is currently in the pre-release product-definition stage. Public implementation details, APIs, deployment guidance, and release artifacts have not yet been announced.
@@ -21,7 +21,7 @@ Automation is useful only when the right actions can proceed at the right time.
 
 Many operational tasks still need a human decision before execution: granting access, changing policy, activating a workflow, releasing data, running an administrative action, or allowing another system to continue.
 
-DataRelay Grant is intended to place a reusable approval layer between **request** and **execution**.
+DataRelay Grant adds a reusable human-approval step between **request** and **execution**.
 
 > **Request → Human Approval → Controlled Execution**
 
@@ -53,9 +53,9 @@ The issued patent material describes:
 
 See [Patent Foundation](/patent-foundation) for the patent references and a more detailed product interpretation.
 
-## Designed as an approval layer
+## Where Grant fits
 
-DataRelay Grant is planned as a reusable human-authorization layer that can work with DataRelay products and external systems.
+DataRelay Grant is intended to provide a reusable approval step for DataRelay products and external systems.
 
 <CardGroup cols={3}>
   <Card title="DataRelay Link" icon="link">
@@ -69,7 +69,7 @@ DataRelay Grant is planned as a reusable human-authorization layer that can work
   </Card>
 </CardGroup>
 
-DataRelay Grant is not intended to replace DataRelay Link or DataRelay Control. The planned role is to provide a common approval decision layer that those products—or other systems—can call when an operation requires human authorization.
+DataRelay Grant is not intended to replace DataRelay Link or DataRelay Control. Its role is to let those products—or other systems—request a human decision before an operation continues.
 
 ## What is public today
 
@@ -89,5 +89,5 @@ DataRelay Grant is not intended to replace DataRelay Link or DataRelay Control. 
 - [KR 10-2567118 B1 — 전자메일을 사용하여 간편한 승인요청을 관리하는 시스템 및 그 동작방법](https://patents.google.com/patent/KR102567118B1/ko)
 
 <Note>
-This site summarizes the product direction and technical concepts derived from the patent material. It is not a legal interpretation of patent scope. The official patent records and issued claims control the legal scope.
+This site explains the planned product and the technical concepts drawn from the patent material. It is not a legal interpretation of patent scope; the official patent records and issued claims govern the legal scope.
 </Note>
