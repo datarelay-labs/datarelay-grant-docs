@@ -34,12 +34,7 @@
         "type": "github",
         "href": "https://github.com/datarelay-labs/datarelay-grant"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Patent Foundation",
-      "href": "/patent-foundation"
-    }
+    ]
   },
   "search": {
     "prompt": "Search DataRelay Grant docs..."
