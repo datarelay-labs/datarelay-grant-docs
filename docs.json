@@ -4,20 +4,37 @@
   "name": "DataRelay Grant",
   "description": "Human approval and execution control for automated actions.",
   "colors": {
-    "primary": "#7C3AED"
+    "primary": "#C2410C",
+    "light": "#FB923C",
+    "dark": "#C75A00"
   },
   "navbar": {
     "links": [
       {
+        "label": "DataRelay",
+        "href": "https://datarelay.run/"
+      },
+      {
+        "label": "Link",
+        "href": "https://link.datarelay.run/"
+      },
+      {
+        "label": "Control",
+        "href": "https://control.datarelay.run/"
+      },
+      {
+        "label": "Grant",
+        "href": "https://grant.datarelay.run/"
+      },
+      {
+        "label": "Engineering",
+        "href": "https://engineering.datarelay.run/"
+      },
+      {
         "type": "github",
         "href": "https://github.com/datarelay-labs/datarelay-grant"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Patent Foundation",
-      "href": "/patent-foundation"
-    }
+    ]
   },
   "search": {
     "prompt": "Search DataRelay Grant docs..."
@@ -66,5 +83,9 @@
       "canonical": "https://grant.datarelay.run"
     },
     "indexing": "navigable"
+  },
+  "appearance": {
+    "default": "system",
+    "strict": false
   }
 }
